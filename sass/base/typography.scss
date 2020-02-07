@@ -1,15 +1,69 @@
 .primary-heading {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight:normal;
-  &--sub{
-      font-size:2rem;
+  
+  @include respond(large-desktop){
+    font-size:4rem;
   }
+  @include respond(tablet){
+    font-size:3rem;
+  }
+  @include respond(phone-sm){
+    font-size:2rem;
+  }
+  
+  &--sub{
+
+      font-size:2.2rem;
+      text-align:center;
+      font-weight:500;
+      margin:1rem 0rem;
+
+      @include respond(large-desktop){
+        font-size:3rem;
+      }
+      @include respond(phone-sm){
+        font-size:2.2rem;
+      }
+     
+      .sub--3{
+        display:block;
+        margin:0.5rem 0rem;
+        @include respond(large-desktop){
+          font-size:3rem;
+        }
+      }
+      .sub--1{
+         @include respond(large-desktop){
+          font-size:3rem;
+        }
+        @include respond(phone){
+          display:block;
+          margin:0.5rem 0rem;
+        }
+
+      }
+      .sub--2{
+         @include respond(large-desktop){
+          font-size:3rem;
+        }
+         @include respond(phone){
+          display:block;
+          margin:0.5rem 0rem;
+        }
+      }
+  }
+  
 }
+
 
 .secondary-heading{
   color:$primary-color;
   font-size:3.5rem;
   text-align:center;
+   @include respond(large-desktop){
+        font-size:4rem;
+    }
   @include respond(tablet){
     font-size:3rem;
   }
@@ -25,6 +79,9 @@
   font-size:2rem;
   color:$text-color;
   font-weight:400;
+   @include respond(large-desktop){
+      font-size:2.5rem;
+    }
    @include respond(phone){
     font-size:1.8rem;
   }

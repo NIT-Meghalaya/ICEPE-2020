@@ -11,24 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-
-  &__logos{
-      display:flex;
-      justify-content: flex-start;
-      align-items:center;
-    .logo{
-        width:15rem;
-        height:15rem;
-      &--1{
-          width:15rem;height:15rem;
-      } 
-    &--2{
-          width:15rem;height:15rem;
-      } 
-    } 
-
-    
-  }
+  
   &__content {
     display: flex;
     flex-direction: column;
@@ -42,18 +25,28 @@
     transform: translate(-50%, -50%);
   }
   &__dates {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 2rem 0rem;
     font-weight: 400;
+    text-align:center;
+    
+
     span {
       font-weight: 700;
+      @include respond(phone){
+        display:block;
+      }
     }
   }
   &__venue {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
+    text-align:center;
     span{
         font-weight: 700;
+         @include respond(phone){
+        display:block;
+      }
     }
   }
 }

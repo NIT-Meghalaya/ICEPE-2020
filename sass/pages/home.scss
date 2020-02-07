@@ -6,9 +6,16 @@
     margin:0 auto;
     height:100vh;
     padding:8rem 10rem;
+     @include respond(large-desktop){
+        padding:10rem 10rem;
+        
+    }
     @include respond(tablet){
         width:90%;
         margin:0 auto;
         padding:8rem 5rem;
+    }
+    @include respond(phone-sm){
+        padding:8rem 2rem;
     }
 }

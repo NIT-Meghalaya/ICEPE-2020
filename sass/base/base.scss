@@ -6,9 +6,10 @@
 
 html{
     font-size:62.5%;
-    box-sizing: border-box;
+    
+
      @include respond(large-desktop){
-        font-size:75%;
+        font-size:80%;
     }
     @include respond(tablet){
         font-size:56.5%;
@@ -20,6 +21,7 @@ html{
    
 }
 body{
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color:$text-color;
