@@ -1,0 +1,68 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.primary-heading {
+  font-size: 4rem;
+  font-weight: normal; }
+  .primary-heading--sub {
+    font-size: 2rem; }
+
+.hero-box {
+  color: #e9d9d9;
+  height: 90vh;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(86, 67, 250, 0.8)), url("../img/clouds-dawn-dusk-electricity-157039.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .hero-box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .hero-box__dates {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    font-weight: 400; }
+    .hero-box__dates span {
+      font-weight: 700; }
+  .hero-box__venue {
+    font-size: 2rem;
+    font-weight: 400; }
+    .hero-box__venue span {
+      font-weight: 700; }
+
+.navbar {
+  min-height: 10vh;
+  background: white;
+  color: #142850;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem; }
+
+.header-box {
+  height: 100vh; }
