@@ -4,8 +4,9 @@
 .section-about{
     max-width:114rem;
     margin:0 auto;
-    height:100vh;
+    // height:100vh;
     padding:8rem 10rem;
+   
      @include respond(large-desktop){
         padding:10rem 10rem;
         
@@ -18,4 +19,13 @@
     @include respond(phone-sm){
         padding:8rem 2rem;
     }
+}
+
+.section-dates{
+    max-width:114rem;
+    margin:0 auto;
+    // height:100vh;
+    padding:8rem 10rem;
+   
+ 
 }

@@ -100,6 +100,10 @@ ul {
     .paragraph {
       font-size: 1.8rem; } }
 
+.tertiary-heading {
+  font-size: 1.5rem;
+  color: #333; }
+
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
 
@@ -148,6 +152,36 @@ ul {
         .hero-box__venue span {
           display: block; } }
 
+.date_cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem; }
+
+.date-box {
+  height: 20rem;
+  width: 25rem;
+  background-color: #f6f6f6;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(20, 40, 80, 0.12);
+  transition: transform .3s;
+  margin-right: 2rem;
+  margin-top: 2.5rem; }
+  .date-box__icon {
+    text-align: center;
+    fill: #27496d;
+    width: 10rem;
+    height: 10rem; }
+  .date-box__text {
+    margin-bottom: 0.5rem;
+    font-size: 2rem; }
+  .date-box:hover {
+    transform: translateY(-1rem) scale(1.03); }
+
 .navbar {
   min-height: 10vh;
   background: white;
@@ -162,7 +196,6 @@ ul {
 .section-about {
   max-width: 114rem;
   margin: 0 auto;
-  height: 100vh;
   padding: 8rem 10rem; }
   @media only screen and (min-width: 1800px) {
     .section-about {
@@ -175,3 +208,8 @@ ul {
   @media only screen and (max-width: 400px) {
     .section-about {
       padding: 8rem 2rem; } }
+
+.section-dates {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 8rem 10rem; }
