@@ -25,6 +25,25 @@ ul {
   .primary-heading--sub {
     font-size: 2rem; }
 
+.secondary-heading {
+  color: #142850;
+  font-size: 3.5rem;
+  text-align: center; }
+
+.paragraph {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-large {
+  margin-bottom: 6rem !important; }
+
 .hero-box {
   color: #e9d9d9;
   height: 90vh;
@@ -33,6 +52,19 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   position: relative; }
+  .hero-box__logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .hero-box__logos .logo {
+      width: 15rem;
+      height: 15rem; }
+      .hero-box__logos .logo--1 {
+        width: 15rem;
+        height: 15rem; }
+      .hero-box__logos .logo--2 {
+        width: 15rem;
+        height: 15rem; }
   .hero-box__content {
     display: flex;
     flex-direction: column;
@@ -56,6 +88,11 @@ ul {
     .hero-box__venue span {
       font-weight: 700; }
 
+.about {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0rem 5rem; }
+
 .navbar {
   min-height: 10vh;
   background: white;
@@ -66,3 +103,7 @@ ul {
 
 .header-box {
   height: 100vh; }
+
+.section-about {
+  height: 100vh;
+  padding: 8rem 10rem; }
