@@ -1,0 +1,30 @@
+.guideline-details {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding:2rem 5rem;
+    @include respond(tablet){
+        width:90%;
+        margin:0 auto;
+        padding:2rem 2rem;
+    }
+    @include respond(mobile-sm){
+        width:100%;
+        margin:0 auto;
+        padding:2rem 0rem;
+    }
+
+  &__head{
+      font-size:3rem;
+      color:$text-color;
+      margin:2rem 0rem;
+  }
+  &__anchor{
+      color:$secondary-color-light;
+      &:link,&:vivited{
+         text-decoration: none; 
+      }
+      &:hover{
+          color:$secondary-color-dark;
+      }
+  }
+}

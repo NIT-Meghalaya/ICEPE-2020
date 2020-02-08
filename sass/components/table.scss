@@ -1,0 +1,66 @@
+.table{
+    width:50vw;
+    margin:0 auto;
+    @include respond(tablet){
+        width:90%;
+        margin: auto;
+    }
+     @include respond(mobile-sm){
+        width:100%;
+        margin: auto;
+    }
+    
+ 
+}
+.table-body{
+     width:100%;
+     border:1px solid $color-brown;
+    &__cell{
+        border:1px solid  $color-brown;
+        p{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:1rem 2rem;
+        }
+        &--1{
+            font-size:2rem;
+            flex:0 0 60%;
+            @include respond(tablet){
+                font-size:1.8rem;
+            }
+            @include respond(mobile-sm){
+                font-size:1.5rem;
+            }
+            margin-right:1rem;
+        }
+        &--2{
+            font-size:2rem;
+            flex:1;
+             @include respond(tablet){
+                font-size:1.8rem;
+            }
+             @include respond(mobile-sm){
+                font-size:1.5rem;
+            }
+             margin-right:1rem;
+        }
+        &--3{
+            font-size:2rem;
+            flex:1;
+             @include respond(tablet){
+                font-size:1.8rem;
+            }
+              @include respond(mobile-sm){
+                font-size:1.5rem;
+            }
+        }
+    }
+   
+ }
+ .table__note{
+       margin-top:1rem;
+      font-size:1.5rem;
+        
+    
+ }
