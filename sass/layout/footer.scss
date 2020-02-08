@@ -10,7 +10,7 @@
       max-width:114rem;
       margin:0 auto;
       @include respond(mobile){
-          width: 90%;
+          width: 95%;
           margin:0 auto;
       }
       li{
@@ -19,10 +19,10 @@
         }
       a{
             text-transform:uppercase;
-            font-size:1.5rem;
+            font-size:1.3rem;
             color:$light-white-color;
             @include respond(mobile-sm){
-                font-size:1.3rem;
+                font-size:1rem;
             }
        
           &:hover{
@@ -32,11 +32,11 @@
   }
   &__copyright{
       color:$light-white-color;
-      margin-bottom:0.5rem;
-      font-size:1.7rem; 
+      padding-bottom:1rem;
+      font-size:1.3rem; 
       text-align:center;
       @include respond(mobile-sm){
-          font-size:1.5rem;
+          font-size:1rem;
       }
   }
 }
