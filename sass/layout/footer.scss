@@ -1,0 +1,42 @@
+
+.footer {
+    color:$light-white-color;
+    background-color: $light-black-color;
+    
+  &__links{
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      max-width:114rem;
+      margin:0 auto;
+      @include respond(mobile){
+          width: 90%;
+          margin:0 auto;
+      }
+      li{
+           padding:2rem 0rem;
+          
+        }
+      a{
+            text-transform:uppercase;
+            font-size:1.5rem;
+            color:$light-white-color;
+            @include respond(mobile-sm){
+                font-size:1.3rem;
+            }
+       
+          &:hover{
+              color:$secondary-color-light;
+          }
+      }
+  }
+  &__copyright{
+      color:$light-white-color;
+      margin-bottom:0.5rem;
+      font-size:1.7rem; 
+      text-align:center;
+      @include respond(mobile-sm){
+          font-size:1.5rem;
+      }
+  }
+}
