@@ -213,3 +213,31 @@ ul {
   max-width: 114rem;
   margin: 0 auto;
   padding: 8rem 10rem; }
+
+.committee {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 2rem 10rem; }
+  @media only screen and (max-width: 600px) {
+    .committee {
+      padding: 2rem 6rem; } }
+  @media only screen and (max-width: 400px) {
+    .committee {
+      padding: 2rem 3rem; } }
+  .committee__group {
+    margin: 2rem 0rem; }
+  .committee__name {
+    font-size: 2.7rem;
+    font-weight: 400; }
+    @media only screen and (max-width: 400px) {
+      .committee__name {
+        font-size: 2.4rem;
+        font-weight: 700; } }
+  .committee__names {
+    font-size: 1.8rem;
+    padding-left: 2rem; }
+    @media only screen and (max-width: 400px) {
+      .committee__names {
+        margin-top: 0.5rem;
+        padding-left: 0.4rem;
+        font-weight: 400; } }

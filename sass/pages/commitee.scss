@@ -1,0 +1,32 @@
+.committee{
+    max-width:114rem;
+    margin:0 auto;
+    padding:2rem 10rem;
+     @include respond(phone){
+        padding:2rem 6rem;
+    }
+    @include respond(phone-sm){
+        padding:2rem 3rem;
+    }
+
+    &__group{
+        margin:2rem 0rem;
+    }
+    &__name{
+        font-size:2.7rem;
+        font-weight: 400;
+        @include respond(phone-sm){
+            font-size:2.4rem;
+            font-weight: 700;
+        }
+    }
+    &__names{
+        font-size:1.8rem;
+        padding-left:2rem;
+        @include respond(phone-sm){
+            margin-top:0.5rem;
+            padding-left:0.4rem;
+            font-weight: 400;
+        }
+    }
+}
