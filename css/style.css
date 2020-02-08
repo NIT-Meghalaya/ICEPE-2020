@@ -203,15 +203,21 @@ ul {
       padding: 2rem 0rem; }
     .footer__links a {
       text-transform: uppercase;
-      font-size: 1.3rem;
+      font-size: 1.7rem;
       color: #e9d9d9; }
+      @media only screen and (max-width: 900px) {
+        .footer__links a {
+          font-size: 1.5rem; } }
       .footer__links a:hover {
         color: #2998ff; }
   .footer__copyright {
     color: #e9d9d9;
     padding-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     text-align: center; }
+    @media only screen and (max-width: 900px) {
+      .footer__copyright {
+        font-size: 1.5rem; } }
 
 .header-box {
   height: 100vh; }

@@ -19,8 +19,11 @@
         }
       a{
             text-transform:uppercase;
-            font-size:1.3rem;
+            font-size:1.7rem;
             color:$light-white-color;
+             @include respond(tablet){
+                font-size:1.5rem;
+            }
             @include respond(mobile-sm){
                 font-size:1rem;
             }
@@ -33,8 +36,11 @@
   &__copyright{
       color:$light-white-color;
       padding-bottom:1rem;
-      font-size:1.3rem; 
+      font-size:1.7rem; 
       text-align:center;
+        @include respond(tablet){
+            font-size:1.5rem;
+        }
       @include respond(mobile-sm){
           font-size:1rem;
       }
