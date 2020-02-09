@@ -532,3 +532,81 @@ ul {
   @media only screen and (max-width: 600px) {
     .about-text {
       padding: 2rem 2rem; } }
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0; }
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+p {
+  font-size: 16px; }
+  @media only screen and (max-width: 900px) {
+    p {
+      font-size: 12px; } }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 70%; }
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: 80%; } }
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 90%; } }
+
+.special {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 24px; }
+  .special h2 {
+    margin-bottom: 20px; }
+  .special p {
+    text-align: center; }
+
+.papers {
+  display: block;
+  padding: 24px; }
+  .papers h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .papers .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    height: auto; }
+    @media only screen and (max-width: 900px) {
+      .papers .grid {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 600px) {
+      .papers .grid {
+        display: block;
+        margin-bottom: 20px; } }
+    .papers .grid .card {
+      display: block;
+      border: 1px solid #d5d5d5;
+      box-shadow: 2px 2px #c5c5c5;
+      width: 100%;
+      padding: 12px;
+      min-height: 200px;
+      max-height: 320px;
+      overflow: scroll; }
+      @media only screen and (max-width: 900px) {
+        .papers .grid .card {
+          padding: 4px; } }
+      .papers .grid .card h3 {
+        margin-top: 4px;
+        text-align: center;
+        margin-bottom: 12px; }
+
+.working, .pub {
+  display: block;
+  padding: 20px;
+  margin: 20px 0; }
