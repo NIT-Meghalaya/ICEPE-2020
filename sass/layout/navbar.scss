@@ -8,35 +8,34 @@
   padding-bottom: 2rem;
   position: relative;
   z-index: 1;
+  border-bottom: 1px solid black;;
 
-
-
-  &__left{  
+  &__left {
     ul {
       list-style-type: none;
       margin: 0 auto;
       padding: 0;
       overflow: hidden;
     }
-    li{
+    li {
       transform: translate(2rem, 0);
       float: left;
     }
   }
 
-  &__right{
+  &__right {
     position: relative;
-    
+
     ul {
       list-style-type: none;
       margin: 0 auto;
       overflow: hidden;
     }
-    li{
+    li {
       transform: translate(-5rem, 0);
       float: right;
     }
-    @include respond(phone){
+    @include respond(tablet) {
       display: none;
     }
   }
@@ -45,19 +44,19 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1.6rem;
     text-decoration: none;
-    &:hover{
+    &:hover {
       background-color: $light-blue;
     }
   }
 
-  &__icon{
+  &__icon {
     display: none;
     color: white;
     font-size: 2rem;
-    padding: 14px 16px;
-    @include respond(phone){
+    padding: 1rem 1.6rem;
+    @include respond(tablet) {
       position: absolute;
       right: 0;
       top: 0;
@@ -66,20 +65,20 @@
     }
   }
 
-  &__responsive{
+  &__responsive {
     position: absolute;
-    li{
-      @include respond(phone){
+    li {
+      @include respond(tablet) {
         display: block;
-        transform: translate(0,0);
+        transform: translate(0, 0);
         position: relative;
         float: none;
-       }
+      }
     }
   }
 
-  &__responsive &__icon{
-    @include respond(phone){
+  &__responsive &__icon {
+    @include respond(tablet) {
       position: absolute;
       right: 0;
       top: 0;
@@ -88,12 +87,11 @@
     }
   }
 
-  &__responsive &__right{
-    @include respond(phone){
+  &__responsive &__right {
+    @include respond(tablet) {
       position: relative;
       float: none;
       display: block;
-    }  
     }
-
+  }
 }

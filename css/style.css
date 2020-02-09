@@ -88,7 +88,8 @@ ul {
       font-size: 2.5rem; } }
   @media only screen and (max-width: 400px) {
     .secondary-heading {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem;
+      margin-top: 3rem; } }
 
 .paragraph {
   font-size: 2rem;
@@ -235,7 +236,8 @@ ul {
   padding-top: 1rem;
   padding-bottom: 2rem;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: 1px solid black; }
   .navbar__left ul {
     list-style-type: none;
     margin: 0 auto;
@@ -253,14 +255,14 @@ ul {
     .navbar__right li {
       transform: translate(-5rem, 0);
       float: right; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       .navbar__right {
         display: none; } }
   .navbar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1.6rem;
     text-decoration: none; }
     .navbar li a:hover {
       background-color: #27496d; }
@@ -268,8 +270,8 @@ ul {
     display: none;
     color: white;
     font-size: 2rem;
-    padding: 14px 16px; }
-    @media only screen and (max-width: 600px) {
+    padding: 1rem 1.6rem; }
+    @media only screen and (max-width: 900px) {
       .navbar__icon {
         position: absolute;
         right: 0;
@@ -278,20 +280,20 @@ ul {
         display: block; } }
   .navbar__responsive {
     position: absolute; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       .navbar__responsive li {
         display: block;
         transform: translate(0, 0);
         position: relative;
         float: none; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     .navbar__responsive .navbar__icon {
       position: absolute;
       right: 0;
       top: 0;
       transform: translate(-2rem, 0);
       display: block; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     .navbar__responsive .navbar__right {
       position: relative;
       float: none;
@@ -343,12 +345,15 @@ ul {
       padding: 8rem 5rem; } }
   @media only screen and (max-width: 400px) {
     .section-about {
-      padding: 8rem 2rem; } }
+      padding: 3.5rem 2rem; } }
 
 .section-dates {
   max-width: 114rem;
   margin: 0 auto;
   padding: 2rem 8rem; }
+  @media only screen and (max-width: 400px) {
+    .section-dates {
+      padding: 1rem 2rem; } }
 
 .committee {
   max-width: 114rem;
@@ -505,15 +510,17 @@ ul {
     .sponsorship {
       height: 70vh; } }
   .sponsorship__info {
-    width: 80%;
+    max-width: 114rem;
     margin: 0 auto;
-    font-size: 2.7rem;
-    margin-top: 10rem; }
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    padding: 0rem 8rem; }
     @media only screen and (max-width: 600px) {
       .sponsorship__info {
-        width: 65%;
+        width: 90%;
         margin-top: 5rem;
-        font-size: 2.4rem; } }
+        font-size: 2.4rem;
+        padding: 0rem 2rem; } }
     @media only screen and (max-width: 400px) {
       .sponsorship__info {
         width: 65%;
