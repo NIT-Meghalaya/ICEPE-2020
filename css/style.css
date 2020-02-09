@@ -438,7 +438,14 @@ ul {
       .location b {
         font-size: 2.1rem; } }
   .location__gallery {
-    margin-bottom: 3rem; }
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 3rem;
+    width: 90%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 600px) {
+      .location__gallery {
+        width: 100%; } }
     .location__gallery img {
       width: 100%;
       margin: 0 auto; }
@@ -456,11 +463,13 @@ ul {
   .location__slide {
     display: none;
     margin: 0 auto;
-    width: 75%; }
-  .location__prev {
-    left: 10%; }
-  .location__next {
-    right: 10%; }
+    width: 100%; }
+  .location__prev, .location__next {
+    text-align: center;
+    margin: 0 auto;
+    transform: translate(0, -3rem); }
+    .location__prev :hover, .location__next :hover {
+      color: lightgrey; }
 
 .guideline-details {
   max-width: 114rem;
