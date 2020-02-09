@@ -1,0 +1,91 @@
+h1{
+    text-align:center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+h2{font-size: 20px; text-align: center;}
+p{
+    font-size: 16px;
+
+    @include respond(tablet){
+        font-size: 12px;
+    }
+}
+
+.container{
+    display:block;
+    margin: 0 auto;
+    width:70%;
+    @include respond(tablet){
+        width:80%;
+    }
+    @include respond(phone){
+        width:90%;
+    }
+}
+
+.special{
+    display:block;
+    width: 100%;
+    height: auto;
+    padding:24px;
+
+    h2{
+        margin-bottom: 20px;
+        }
+
+    p{
+        text-align:center;
+    }
+}
+
+.papers{
+    display:block;
+    padding:24px;
+
+    h3{text-align:center;
+        font-size: 16px;
+        margin-bottom: 20px;}
+
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        height:auto;
+
+        @include respond(tablet){
+        grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond(phone){
+            display:block;
+            margin-bottom: 20px;
+        }
+
+        .card{
+            display:block;
+            box-shadow: 2px 2px #c5c5c5;
+            width:100%;
+            padding:12px;
+            min-height: 200px;
+            max-height: 320px;
+            overflow: scroll;
+    
+            @include respond(tablet){
+                padding:4px;
+            }
+
+            h3{
+                margin-top: 4px;
+                text-align:center;
+                margin-bottom: 12px;
+            }
+
+        }
+    }
+}
+
+.working, .pub{
+    display:block;
+    padding: 20px;
+    margin: 20px 0;
+}
