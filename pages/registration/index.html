@@ -13,6 +13,20 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar" id="myNavbar">
+            <ul class="navbar__left">
+                <li><a href="/">Home</a></li>
+            </ul>
+            <ul class="navbar__right">
+                <li><a href="/pages/about/">About</a></li>
+                <li><a href="/pages/registration/" target="_blank">Registration</a></li>
+                <li><a href="/pages/location/" target="_blank">Location</a></li>
+                <li><a href="/pages/contact/" target="_blank">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="navbar__icon" onclick="dropdown()">&#9776;</a>
+        </div>
+    </nav>
     <div class="secondary-heading">
         <h2>Registration Details</h2>
     </div>
@@ -22,10 +36,12 @@
         </div>
         <div class="guideline-details__text">
             <p class="paragraph">
-                Prospective authors are invited to submit full papers (upto 6 pages in IEEE template) in PDF format. The conference
-                paper template can be downloaded from the link 
-                <a class="guideline-details__anchor" href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">here.</a> 
-                 All papers must include title, complete contact information of all the authors, abstract and key words
+                Prospective authors are invited to submit full papers (upto 6 pages in IEEE template) in PDF format. The
+                conference
+                paper template can be downloaded from the link
+                <a class="guideline-details__anchor" href="https://www.ieee.org/conferences/publishing/templates.html"
+                    target="_blank">here.</a>
+                All papers must include title, complete contact information of all the authors, abstract and key words
                 on the first page. Further details, please find it on conference website.
             </p>
         </div>
@@ -35,15 +51,15 @@
         <div class="table">
             <div class="table-body">
                 <div class="table-body__cell">
-                   <p>
-                     <span class="table-body__cell--1">Submission of Special Session papers</span>
-                     <span class="table-body__cell--2">May 15, 2020</span>
-                    </p> 
+                    <p>
+                        <span class="table-body__cell--1">Submission of Special Session papers</span>
+                        <span class="table-body__cell--2">May 15, 2020</span>
+                    </p>
                 </div>
                 <div class="table-body__cell">
                     <p>
-                     <span class="table-body__cell--1">Submission of full regular papers</span>
-                     <span class="table-body__cell--2">May 15, 2020</span>
+                        <span class="table-body__cell--1">Submission of full regular papers</span>
+                        <span class="table-body__cell--2">May 15, 2020</span>
                     </p>
                 </div>
                 <div class="table-body__cell">
@@ -65,10 +81,10 @@
                     </p>
                 </div>
                 <div class="table-body__cell">
-                 <p>
-                    <span class="table-body__cell--1">Final registration with 10% extra fee</span>
-                     <span class="table-body__cell--2">Aug 25, 2020</span>
-                 </p>
+                    <p>
+                        <span class="table-body__cell--1">Final registration with 10% extra fee</span>
+                        <span class="table-body__cell--2">Aug 25, 2020</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -119,10 +135,11 @@
                         <span class="table-body__cell--3">$ 180</span>
                     </p>
                 </div>
-               
+
             </div>
             <div>
-                <p class="table__note"> <strong>Note:₹ and $ for National and International participants respectively.</strong> </p>
+                <p class="table__note"> <strong>Note:₹ and $ for National and International participants
+                        respectively.</strong> </p>
             </div>
         </div>
     </section>
@@ -135,14 +152,24 @@
                 <li><a href="/pages/registration/" target="_blank">Registration</a></li>
                 <li><a href="/pages/location/" target="_blank">Location</a></li>
                 <li><a href="/pages/contact/" target="_blank">Contact</a></li>
-    
+
             </ul>
             <div class="footer__copyright">
                 <p>Copyright &copy; IEEE ICEPE 2020</p>
             </div>
         </div>
     </footer>
-    
+
+    <script> //dropdown
+        function dropdown() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " navbar__responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 </body>
 
 </html>
