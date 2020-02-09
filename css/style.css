@@ -324,7 +324,7 @@ ul {
 .section-about {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 8rem 10rem; }
+  padding: 4rem 8rem; }
   @media only screen and (min-width: 1800px) {
     .section-about {
       padding: 10rem 10rem; } }
@@ -340,7 +340,7 @@ ul {
 .section-dates {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 8rem 10rem; }
+  padding: 2rem 8rem; }
 
 .committee {
   max-width: 114rem;
@@ -542,54 +542,43 @@ ul {
     .about-text {
       padding: 2rem 2rem; } }
 
-h1 {
-  text-align: center;
-  font-size: 28px;
-  margin: 20px 0; }
-
-h2 {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px; }
-
-p {
-  font-size: 16px; }
-  @media only screen and (max-width: 900px) {
-    p {
-      font-size: 12px; } }
-
 .container {
   display: block;
   margin: 0 auto;
-  width: 70%; }
+  max-width: 114rem;
+  padding: 2rem 10rem; }
   @media only screen and (max-width: 900px) {
     .container {
-      width: 80%; } }
+      width: 90%;
+      padding: 2rem 6rem; } }
   @media only screen and (max-width: 600px) {
     .container {
-      width: 90%; } }
+      width: 90%;
+      padding: 2rem 4rem; } }
+  @media only screen and (max-width: 400px) {
+    .container {
+      width: 90%;
+      padding: 2rem 1.4rem; } }
 
 .special {
   display: block;
   width: 100%;
   height: auto;
-  padding: 24px; }
-  .special h2 {
-    margin-bottom: 20px; }
-  .special p {
-    text-align: center; }
+  padding: 2rem; }
+  .special__head {
+    font-size: 2.7rem;
+    font-weight: 400; }
 
 .papers {
   display: block;
-  padding: 24px; }
-  .papers h3 {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px; }
+  padding: 2rem; }
+  .papers__head {
+    font-size: 2.7rem;
+    font-weight: 400; }
   .papers .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+    grid-gap: 1.6rem;
     height: auto; }
     @media only screen and (max-width: 900px) {
       .papers .grid {
@@ -597,25 +586,30 @@ p {
     @media only screen and (max-width: 600px) {
       .papers .grid {
         display: block;
-        margin-bottom: 20px; } }
+        margin-bottom: 2rem; } }
     .papers .grid .card {
       display: block;
-      border: 1px solid #d5d5d5;
-      box-shadow: 2px 2px #c5c5c5;
+      box-shadow: 0 1.5rem 4rem rgba(20, 40, 80, 0.12);
       width: 100%;
-      padding: 12px;
-      min-height: 200px;
-      max-height: 320px;
-      overflow: scroll; }
-      @media only screen and (max-width: 900px) {
-        .papers .grid .card {
-          padding: 4px; } }
-      .papers .grid .card h3 {
-        margin-top: 4px;
-        text-align: center;
-        margin-bottom: 12px; }
+      padding: 2rem;
+      transition: transform .3s;
+      background: #f6f6f6;
+      backface-visibility: hidden; }
+      .papers .grid .card:hover {
+        transform: translateY(-0.2rem) scale(1.01); }
+      .papers .grid .card__head {
+        font-size: 2.3rem;
+        font-weight: 400; }
+      .papers .grid .card__info {
+        font-size: 1.8rem; }
 
-.working, .pub {
+.working {
   display: block;
-  padding: 20px;
-  margin: 20px 0; }
+  margin: 2rem 0; }
+  .working__head {
+    font-size: 2.7rem;
+    font-weight: 400; }
+
+.pub__head {
+  font-size: 2.7rem;
+  font-weight: 400; }
