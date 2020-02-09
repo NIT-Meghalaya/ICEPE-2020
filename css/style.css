@@ -233,7 +233,9 @@ ul {
   font-size: 1.75rem;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 1; }
   .navbar__left ul {
     list-style-type: none;
     margin: 0 auto;
@@ -242,16 +244,18 @@ ul {
   .navbar__left li {
     transform: translate(2rem, 0);
     float: left; }
-  .navbar__right ul {
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden; }
-  .navbar__right li {
-    transform: translate(-5rem, 0);
-    float: right; }
-  @media only screen and (max-width: 600px) {
-    .navbar__right {
-      display: none; } }
+  .navbar__right {
+    position: relative; }
+    .navbar__right ul {
+      list-style-type: none;
+      margin: 0 auto;
+      overflow: hidden; }
+    .navbar__right li {
+      transform: translate(-5rem, 0);
+      float: right; }
+    @media only screen and (max-width: 600px) {
+      .navbar__right {
+        display: none; } }
   .navbar li a {
     display: block;
     color: white;
@@ -272,12 +276,14 @@ ul {
         top: 0;
         transform: translate(-2rem, 0);
         display: block; } }
-  @media only screen and (max-width: 600px) {
-    .navbar__responsive li {
-      display: block;
-      transform: translate(0, 0);
-      position: relative;
-      float: none; } }
+  .navbar__responsive {
+    position: absolute; }
+    @media only screen and (max-width: 600px) {
+      .navbar__responsive li {
+        display: block;
+        transform: translate(0, 0);
+        position: relative;
+        float: none; } }
   @media only screen and (max-width: 600px) {
     .navbar__responsive .navbar__icon {
       position: absolute;
@@ -287,6 +293,7 @@ ul {
       display: block; } }
   @media only screen and (max-width: 600px) {
     .navbar__responsive .navbar__right {
+      position: relative;
       float: none;
       display: block; } }
 
@@ -439,10 +446,18 @@ ul {
       .location b {
         font-size: 2.1rem; } }
   .location__gallery {
-    margin-bottom: 3rem; }
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .location__gallery {
+        width: 100%; } }
     .location__gallery img {
-      width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 80%; }
     .location__gallery a {
       cursor: pointer;
       position: absolute;
@@ -457,11 +472,7 @@ ul {
   .location__slide {
     display: none;
     margin: 0 auto;
-    width: 75%; }
-  .location__prev {
-    left: 10%; }
-  .location__next {
-    right: 10%; }
+    width: 80%; }
 
 .guideline-details {
   max-width: 114rem;

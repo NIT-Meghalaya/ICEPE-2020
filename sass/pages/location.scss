@@ -39,10 +39,19 @@
     }
 
     &__gallery{
+        margin-top: 5rem;
         margin-bottom: 3rem;
-        img{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        @include respond(phone){
             width: 100%;
+        }
+        img{
             margin: 0 auto;
+            width: 80%;
         }
         a{
             cursor: pointer;
@@ -58,16 +67,11 @@
           
         }      
     }
+
     &__slide{
         display: none;
         margin: 0 auto;
-        width: 75%;
-    
+        width: 80%;
     }
-    &__prev{
-        left: 10%;
-    }
-    &__next{
-        right: 10%;
-    }
+
 }

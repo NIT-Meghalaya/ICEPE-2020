@@ -20,9 +20,10 @@
             </ul>
             <ul class="navbar__right">
                 <li><a href="/pages/about/">About</a></li>
-                <li><a href="/pages/registration/" target="_blank">Registration</a></li>
-                <li><a href="/pages/location/" target="_blank">Location</a></li>
-                <li><a href="/pages/contact/" target="_blank">Contact</a></li>
+                <li><a href="/pages/registration/">Registration</a></li>
+                <li><a href="/pages/author/">Author</a></li>
+                <li><a href="/pages/location/">Location</a></li>
+                <li><a href="/pages/contact/">Contact</a></li>
             </ul>
             <a href="javascript:void(0);" class="navbar__icon" onclick="dropdown()">&#9776;</a>
         </div>
@@ -32,6 +33,22 @@
         <h2>About Meghalaya</h2>
     </div>
     <div class="location">
+        <div class="location__gallery">
+            <div>
+                <div class="location__slide">
+                    <img src="/img/locationgallery/0.jpg" alt="" />
+                </div>
+                <div class="location__slide">
+                    <img src="/img/locationgallery/1.jpg" alt="" />
+                </div>
+                <div class="location__slide">
+                    <img src="/img/locationgallery/2.jpg" alt="" />
+                </div>
+                <div class="location__slide">
+                    <img src="/img/locationgallery/3.jpg" alt="" />
+                </div>
+            </div>
+        </div>
         <div class="location__info">
            <p class="paragraph">
             <b>Meghalaya</b>, the abode of clouds, is one of the most beautiful states in North-East India offering a
@@ -49,22 +66,6 @@
                 attractions like Lady Hydari Park, Ward's Lake, Don Bosco Centre for Indigenous Cultures, Spread Eagle
                 Falls, Sweet Falls, Elephant Falls, Shillong Peak, Capt. Williamson Sangma State Museum.
            </p>
-        </div>
-        <div class="location__gallery">
-            <a class="location__prev" onclick="nextSlide(-1)">&#10094;</a>
-            <a class="location__next" onclick="nextSlide(1)">&#10095;</a>
-            <div class="location__slide">
-                <img src="/img/locationgallery/0.jpg" alt="Picture 1" />
-            </div>
-            <div class="location__slide">
-                <img src="/img/locationgallery/1.jpg" alt=" Picture 2" />
-            </div>
-            <div class="location__slide">
-                <img src="/img/locationgallery/2.jpg" alt=" Picture 3" />
-            </div>
-            <div class="location__slide">
-                <img src="/img/locationgallery/3.jpg" alt="Picture 4" />
-            </div>
         </div>
         <div class="location__map">
             <iframe width="600" height="500" id="gmap_canvas"
@@ -90,22 +91,18 @@
     <script>
         //gallery
         var index = 1;
-        showSlide(index);
+        showSlide();
 
-        function nextSlide(n) {
-            showSlide(index += n);
-        }
-
-        function showSlide(n) {
+        function showSlide() {
             var i;
             var slides = document.getElementsByClassName("location__slide");
-
-            if (n > slides.length) { index = 1; }
-            if (n < 1) { index = slides.length; }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none ";
             }
+            index++;
+            if (index > slides.length) { index = 1; }
             slides[index - 1].style.display = "block";
+            setTimeout(showSlide, 3000);
         }
         //dropdown
         function dropdown() {
