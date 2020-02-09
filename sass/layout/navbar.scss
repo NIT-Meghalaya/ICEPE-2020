@@ -1,8 +1,91 @@
 .navbar {
+  width: 100%;
   min-height: 10vh;
-  background: white;
-  color: $primary-color;
-  font-size: 1.5rem;
+  background: $primary-color;
+  font-size: 1.75rem;
   text-align: center;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  &__left{
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+    }
+    li{
+      transform: translate(2rem, 0);
+      float: left;
+    }
+  }
+
+  &__right{
+    ul {
+      list-style-type: none;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    li{
+      transform: translate(-5rem, 0);
+      float: right;
+    }
+    @include respond(phone){
+      display: none;
+    }
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover{
+      background-color: $light-blue;
+    }
+  }
+
+  &__icon{
+    display: none;
+    color: white;
+    font-size: 2rem;
+    padding: 14px 16px;
+    @include respond(phone){
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(-2rem, 0);
+      display: block;
+    }
+  }
+
+  &__responsive{
+    li{
+      @include respond(phone){
+        display: block;
+        transform: translate(0,0);
+        position: relative;
+        float: none;
+       }
+    }
+  }
+
+  &__responsive &__icon{
+    @include respond(phone){
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(-2rem, 0);
+      display: block;
+    }
+  }
+
+  &__responsive &__right{
+    @include respond(phone){
+      float: none;
+      display: block;
+    }  
+    }
+
 }

@@ -1,0 +1,42 @@
+.sponsorship{
+    max-width: 114rem;
+    margin: 0 auto;
+    height: 70vh;
+    @include respond(phone){
+        height: 70vh;
+    }
+    @include respond(phone-sm){
+        height: 70vh;
+    }
+
+    &__info{
+        width: 80%;
+        margin: 0 auto; 
+        font-size: 2.7rem;
+        margin-top: 10rem;
+        
+        @include respond(phone){
+            width: 65%;
+            margin-top: 5rem;
+            font-size: 2.4rem;
+        }
+        @include respond(phone-sm){
+            width: 65%;
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+    }
+
+    
+
+    &__link{
+        &:link{
+            color: $secondary-color-dark;
+        }
+        &:hover{
+            color: $secondary-color-light;
+        }
+    }
+
+
+}

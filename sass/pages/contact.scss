@@ -1,0 +1,48 @@
+.contact{
+    max-width: 114rem;
+    margin: 0 auto;
+    height: 70vh;
+    @include respond(phone){
+        height: 70vh;
+    }
+    @include respond(phone-sm){
+        height: 70vh;
+    }
+
+    &__info{
+        margin: 0 auto; 
+        font-size: 2.7rem;
+        margin-top: 10rem;
+        width: max-content;
+        @include respond(phone){
+            width: 65%;
+            font-size: 2rem;
+        }
+        @include respond(phone-sm){
+            width: 65%;
+            font-size: 2rem;
+        }
+    }
+
+    &__name{
+        font-size: 3.5rem;
+        font-weight: 400;
+        @include respond(phone){
+            font-size: 2.2rem;
+        }
+        @include respond(phone-sm){
+            font-size: 2rem;
+        }
+    }
+
+    &__email{
+        font-weight: 400;
+    }
+
+    &__phno{
+        font-weight: 400;
+    }
+}
+
+
+  

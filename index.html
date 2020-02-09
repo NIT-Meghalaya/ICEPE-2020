@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/icon-style.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <title>ICEPE 2020</title>
 </head>
+
 <body>
     <header class="header-box">
-        <nav class="navbar">Make Nav here <br>
-            <a href="/">Home</a>
-            <a href="/pages/about/">About</a>
-            <a href="pages/commitee/">Commitee</a>
-            <a href="pages/author/">Author</a>
-            <a href="pages/registration/">Registration</a>
-            <a href="pages/location/">Location</a>
-            <a href="pages/contact/">Contact</a>
-            <a href="pages/sponsorship/">Sponsorship</a>
+        <nav>
+            <div class="navbar" id="myNavbar">
+                <ul class="navbar__left">
+                    <li><a href="/">Home</a></li>
+                </ul>
+                <ul class="navbar__right">
+                    <li><a href="/pages/about/">About</a></li>
+                    <li><a href="/pages/registration/" target="_blank">Registration</a></li>
+                    <li><a href="/pages/location/" target="_blank">Location</a></li>
+                    <li><a href="/pages/contact/" target="_blank">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="navbar__icon" onclick="dropdown()">&#9776;</a>
+            </div>
         </nav>
         <div class="hero-box">
-          <div class="hero-box__content">
+            <div class="hero-box__content">
                 <div class="primary-heading">
                     <h1>ICEPE 2020</h1>
                 </div>
                 <div class="primary-heading--sub">
                     <p>
-                        <span class="sub--1">IEEE International Conference on</span> 
-                        <span class="sub--2">Energy, Power and Environment</span> 
-                        <span class="sub--3">(Towards Clean Energy Technologies)</span> 
+                        <span class="sub--1">IEEE International Conference on</span>
+                        <span class="sub--2">Energy, Power and Environment</span>
+                        <span class="sub--3">(Towards Clean Energy Technologies)</span>
                     </p>
                 </div>
                 <div class="hero-box__dates">
                     <p><span>Conference Dates:</span> September 04 – 06, 2020</p>
                 </div>
                 <div class="hero-box__venue">
-                 <p><span>Venue:</span> National Institute of Technology Meghalaya, Shillong, India</p>
+                    <p><span>Venue:</span> National Institute of Technology Meghalaya, Shillong, India</p>
                 </div>
             </div>
         </div>
@@ -50,17 +56,22 @@
         </div>
         <div class="about">
             <p class="paragraph u-margin-bottom-small">
-                ICEPE 2020 is the 3rd IEEE International Conference on Power Energy and Environment, which is being organized by the
+                ICEPE 2020 is the 3rd IEEE International Conference on Power Energy and Environment, which is being
+                organized by the
                 Department of Electrical Engineering, NIT Meghalaya, Shillong, India during 4th-6th September 2020.
             </p>
             <p class="paragraph u-margin-bottom-small">
-                The conference is proposed with a basic theme “Towards Clean Energy Technologies”. ICEPE 2020 will provide an
-                opportunity to the practicing engineers, academicians and researchers to meet in a common forum to discuss various
+                The conference is proposed with a basic theme “Towards Clean Energy Technologies”. ICEPE 2020 will
+                provide an
+                opportunity to the practicing engineers, academicians and researchers to meet in a common forum to
+                discuss various
                 issues and its future direction in the field of clean energy technologies.
             </p>
             <p class="paragraph u-margin-bottom-small">
-                 There are various tracks in the conference, which mainly focuses on the power, energy and environment. The conference
-                aims to put together the experts from the relevant research domains to share their knowledge and ideas with a direction
+                There are various tracks in the conference, which mainly focuses on the power, energy and environment.
+                The conference
+                aims to put together the experts from the relevant research domains to share their knowledge and ideas
+                with a direction
                 towards future research scope.
             </p>
         </div>
@@ -78,13 +89,13 @@
                 </p>
             </div>
             <div class="date-box">
-               <h3 class="heading-tertiary u-margin-bottom-small">May 15,2020</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">May 15,2020</h3>
                 <p class="date-box__text">
                     Submission of full regular papers.
                 </p>
             </div>
             <div class="date-box">
-               <h3 class="heading-tertiary u-margin-bottom-small">July 15,2020</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">July 15,2020</h3>
                 <p class="date-box__text">
                     Paper acceptance notification.
                 </p>
@@ -116,7 +127,7 @@
         <div class="footer">
             <ul class="footer__links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/pages/about/" >About</a></li>
+                <li><a href="/pages/about/">About</a></li>
                 <li><a href="/pages/registration/" target="_blank">Registration</a></li>
                 <li><a href="/pages/location/" target="_blank">Location</a></li>
                 <li><a href="/pages/contact/" target="_blank">Contact</a></li>
@@ -127,6 +138,16 @@
             </div>
         </div>
     </footer>
-   
+    <script> //dropdown
+        function dropdown() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " navbar__responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 </body>
+
 </html>

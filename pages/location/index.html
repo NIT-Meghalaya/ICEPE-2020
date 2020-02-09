@@ -13,7 +13,106 @@
 </head>
 
 <body>
-    <h1>Location Page</h1>
+    <nav>
+        <div class="navbar" id="myNavbar">
+            <ul class="navbar__left">
+                <li><a href="/">Home</a></li>
+            </ul>
+            <ul class="navbar__right">
+                <li><a href="/pages/about/">About</a></li>
+                <li><a href="/pages/registration/" target="_blank">Registration</a></li>
+                <li><a href="/pages/location/" target="_blank">Location</a></li>
+                <li><a href="/pages/contact/" target="_blank">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="navbar__icon" onclick="dropdown()">&#9776;</a>
+        </div>
+    </nav>
+    </div>
+    <div class="secondary-heading">
+        <h2>About Meghalaya</h2>
+    </div>
+    <div class="location">
+        <div class="location__info">
+            <b>Meghalaya</b>, the abode of clouds, is one of the most beautiful states in North-East India offering a
+            variety
+            of sights, activities, food and festivals to the tourists. Well known for Cherapunjji, the place which
+            receives one of the maximum rainfall in the world, Meghalaya can mesmerise you with its hills, valleys,
+            lakes, caves and waterfalls which when combined with the beautiful clouds, give it a very serene, beautiful
+            look.
+        </div>
+        <div class="location__info">
+            <b>Shillong</b> is the only hill station in the country that is accessible from all sides. The name Shillong
+            is derived from U-Shyllong, a powerful deity and is situated at an altitude of 1496 m above sea level with
+            attractions like Lady Hydari Park, Ward's Lake, Don Bosco Centre for Indigenous Cultures, Spread Eagle
+            Falls, Sweet Falls, Elephant Falls, Shillong Peak, Capt. Williamson Sangma State Museum.
+        </div>
+        <div class="location__gallery">
+            <a class="location__prev" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="location__next" onclick="nextSlide(1)">&#10095;</a>
+            <div class="location__slide">
+                <img src="/img/locationgallery/0.jpg" alt="" />
+            </div>
+            <div class="location__slide">
+                <img src="/img/locationgallery/1.jpg" alt="" />
+            </div>
+            <div class="location__slide">
+                <img src="/img/locationgallery/2.jpg" alt="" />
+            </div>
+            <div class="location__slide">
+                <img src="/img/locationgallery/3.jpg" alt="" />
+            </div>
+        </div>
+        <div class="location__map">
+            <iframe width="600" height="500" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=nit%20megahlaya&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/about/">About</a></li>
+                <li><a href="/pages/registration/" target="_blank">Registration</a></li>
+                <li><a href="/pages/location/" target="_blank">Location</a></li>
+                <li><a href="/pages/contact/" target="_blank">Contact</a></li>
+
+            </ul>
+            <div class="footer__copyright">
+                <p>Copyright &copy; IEEE ICEPE 2020</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        //gallery
+        var index = 1;
+        showSlide(index);
+
+        function nextSlide(n) {
+            showSlide(index += n);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("location__slide");
+
+            if (n > slides.length) { index = 1; }
+            if (n < 1) { index = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            slides[index - 1].style.display = "block";
+        }
+        //dropdown
+        function dropdown() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " navbar__responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 </body>
 
 </html>
