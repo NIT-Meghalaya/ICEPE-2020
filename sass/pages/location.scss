@@ -39,17 +39,19 @@
     }
 
     &__gallery{
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
+        margin-top: 5rem;
         margin-bottom: 3rem;
-        width: 90%;
+        display: block;
+        width: 80%;
         margin: 0 auto;
+        text-align: center;
+
         @include respond(phone){
             width: 100%;
         }
         img{
-            width: 100%;
             margin: 0 auto;
+            width: 80%;
         }
         a{
             cursor: pointer;
@@ -69,15 +71,7 @@
     &__slide{
         display: none;
         margin: 0 auto;
-        width: 100%;
+        width: 80%;
     }
 
-    &__prev, &__next{
-        text-align: center;
-        margin: 0 auto;
-        transform: translate(0, -3rem);
-        :hover{
-            color: lightgrey;
-        }
-    }
 }

@@ -6,8 +6,12 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 
-  &__left{
+
+
+  &__left{  
     ul {
       list-style-type: none;
       margin: 0 auto;
@@ -21,6 +25,8 @@
   }
 
   &__right{
+    position: relative;
+    
     ul {
       list-style-type: none;
       margin: 0 auto;
@@ -61,6 +67,7 @@
   }
 
   &__responsive{
+    position: absolute;
     li{
       @include respond(phone){
         display: block;
@@ -83,6 +90,7 @@
 
   &__responsive &__right{
     @include respond(phone){
+      position: relative;
       float: none;
       display: block;
     }  
