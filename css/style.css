@@ -503,12 +503,11 @@ ul {
     font-size: 3rem;
     color: #333;
     margin: 2rem 0rem; }
-  .guideline-details__anchor {
-    color: #2998ff; }
-    .guideline-details__anchor:link, .guideline-details__anchor:vivited {
-      text-decoration: none; }
-    .guideline-details__anchor:hover {
-      color: #5643fa; }
+  .guideline-details__anchor:link, .guideline-details__anchor:visited {
+    color: #2998ff;
+    text-decoration: none; }
+  .guideline-details__anchor:hover, .guideline-details__anchor:active {
+    color: #5643fa; }
 
 .sponsorship {
   max-width: 114rem;
@@ -642,3 +641,10 @@ ul {
     color: #333;
     font-weight: 400;
     padding-left: 0.5rem; }
+
+.template {
+  color: #2998ff; }
+  .template:link, .template:visited {
+    text-decoration: none; }
+  .template:hover, .template:active {
+    color: #5643fa; }

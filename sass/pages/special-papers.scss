@@ -8,3 +8,14 @@
         padding-left:0.5rem;
     }
 }
+
+.template{
+    color:$secondary-color-light;
+      &:link,&:visited{
+         text-decoration: none; 
+      }
+      &:hover,&:active{
+          color:$secondary-color-dark;
+      }
+    
+}

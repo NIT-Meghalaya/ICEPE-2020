@@ -19,11 +19,12 @@
       margin:2rem 0rem;
   }
   &__anchor{
-      color:$secondary-color-light;
-      &:link,&:vivited{
-         text-decoration: none; 
+
+      &:link,&:visited{
+        color:$secondary-color-light;
+        text-decoration:none;
       }
-      &:hover{
+      &:hover,&:active{
           color:$secondary-color-dark;
       }
   }
