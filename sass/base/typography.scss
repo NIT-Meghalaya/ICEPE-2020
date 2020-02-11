@@ -77,6 +77,8 @@
   font-size: 2rem;
   color: $text-color;
   font-weight: 400;
+  text-align:justify;  
+  text-justify:inter-word;
   @include respond(large-desktop) {
     font-size: 2.5rem;
   }

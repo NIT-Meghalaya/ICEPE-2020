@@ -1,99 +1,92 @@
-.container{
-    display:block;
-    margin: 0 auto;
-    max-width:114rem;
-    padding:2rem 10rem;
-    @include respond(tablet){
-        width:90%;
-        padding:2rem 6rem;
-    }
-    @include respond(phone){
-        width:90%;
-         padding:2rem 4rem;
-    }
-     @include respond(phone-sm){
-        width:90%;
-         padding:2rem 1.4rem;
-    }
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 114rem;
+  padding: 2rem 10rem;
+  @include respond(tablet) {
+    width: 90%;
+    padding: 2rem 6rem;
+  }
+  @include respond(phone) {
+    width: 90%;
+    padding: 2rem 4rem;
+  }
+  @include respond(phone-sm) {
+    width: 90%;
+    padding: 2rem 1.4rem;
+  }
 }
 
-.special{
-    display:block;
-    width: 100%;
+.special {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+
+  &__head {
+    font-size: 3rem;
+    color: $text-color;
+  }
+}
+
+.papers {
+  display: block;
+  padding: 2rem;
+
+  &__head {
+     font-size: 2.7rem;
+    
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.6rem;
     height: auto;
-    padding:2rem;
-    
 
-    &__head{
-        
-        font-size:2.7rem;
-        font-weight: 400;
-        
+    @include respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
     }
+    @include respond(phone) {
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      display: block;
+      // border: 1px solid #d5d5d5;
+      // box-shadow: 2px 2px #c5c5c5;
+      box-shadow: 0 1.5rem 4rem rgba($primary-color, 0.12);
+      width: 100%;
+      padding: 2rem;
+      transition: transform 0.3s;
+      background: $color-grey;
+      backface-visibility: hidden;
+      &:hover {
+        transform: translateY(-0.2rem) scale(1.01);
+      }
+      &__head {
+        font-size: 2.3rem;
+        font-weight: 400;
+      }
+      &__info {
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
 
-.papers{
-    display:block;
-    padding:2rem;
-    
-    &__head{
-         font-size:2.7rem;
-        font-weight: 400;
-    }
-    .grid{
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1.6rem;
-        height:auto;
-        
+.working {
+  &__head {
+    font-size: 3rem;
+    color: $text-color;
+  }
+  display: block;
 
-        @include respond(tablet){
-        grid-template-columns: repeat(2, 1fr);
-        }
-        @include respond(phone){
-            display:block;
-            margin-bottom: 2rem;
-        }
-
-        .card{
-            display:block;
-            // border: 1px solid #d5d5d5;
-            // box-shadow: 2px 2px #c5c5c5;
-            box-shadow: 0 1.5rem 4rem rgba($primary-color, 0.12);
-            width:100%;
-            padding:2rem;
-            transition: transform .3s;
-            background:$color-grey;
-            backface-visibility: hidden;
-            &:hover {
-                transform: translateY(-0.2rem) scale(1.01);
-            }
-           &__head{
-               font-size:2.3rem;
-               font-weight: 400;
-           }
-           &__info{
-               font-size:1.8rem;
-               
-           }
-
-        }
-    }
+  margin: 2rem 0;
 }
-
-.working{
-     &__head{
-        font-size:2.7rem;
-        font-weight: 400;
-    }
-    display:block;
-    
-    margin: 2rem 0;
-}
-.pub{
-    &__head{
-        font-size:2.7rem;
-        font-weight: 400;
-        
-    }
+.pub {
+  &__head {
+    font-size: 3rem;
+    color: $text-color;
+  }
 }
