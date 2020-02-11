@@ -14,23 +14,29 @@
 
 <body>
     <header class="header-box">
-        <nav>
-            <div class="navbar" id="myNavbar">
-                <ul class="navbar__left">
-                    
-                </ul>
-                <ul class="navbar__right">
-                    <li><a href="./pages/sponsorship/">Sponsorship</a></li>
-                    <li><a href="./pages/contact/">Contact</a></li>
-                    <li><a href="./pages/location/" >Location</a></li>
-                    <li><a href="./pages/author/">Author</a></li>
-                    <li><a href="./pages/registration/">Registration</a></li>
-                    <li><a href="./pages/commitee/">Committee</a></li>
-                    <li><a href="./pages/about/">About</a></li>
-                </ul>
-                <a href="javascript:void(0);" class="navbar__icon" onclick="dropdown()">&#9776;</a>
-            </div>
-        </nav>
+        <div class="nav">
+            <nav class="topnav" id="myTopnav">
+                <a href="./pages/about/">About</a>
+                <a href="./pages/commitee/">Committee</a>
+                <div class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn">
+                        Call for Papers
+                      </a>
+                    <div class="dropdown-content">
+                        <a href="./pages/regular-papers/">Regular Session</a>
+                        <a href="./pages/special-papers/">Special Session</a>
+                     </div>
+                </div>
+                <a href="./pages/author/">Author</a>
+                <a href="./pages/registration/">Registration</a>
+                <a href="./pages/location/">Location</a>
+                <a href="./pages/contact/">Contact</a>
+                <a href="./pages/sponsorship/">Sponsorship</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </div>
+        
+        
         <div class="hero-box">
             <div class="hero-box__content">
                 <div class="primary-heading">
@@ -140,16 +146,8 @@
             </div>
         </div>
     </footer>
-    <script> //dropdown
-        function dropdown() {
-            var x = document.getElementById("myNavbar");
-            if (x.className === "navbar") {
-                x.className += " navbar__responsive";
-            } else {
-                x.className = "navbar";
-            }
-        }
-    </script>
+    
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
