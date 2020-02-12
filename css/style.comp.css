@@ -673,3 +673,17 @@ ul {
     text-decoration: none; }
   .template:hover, .template:active {
     color: #5643fa; }
+
+.speakers {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+  min-height: 100vh; }
+  @media only screen and (max-width: 600px) {
+    .speakers {
+      width: 90%;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 400px) {
+    .speakers {
+      width: 90%;
+      margin: 0 auto; } }
