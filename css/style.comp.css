@@ -427,6 +427,13 @@ ul {
     .section-dates {
       padding: 1rem 2rem; } }
 
+.section-image {
+  max-width: 80%;
+  margin: 0 auto; }
+  .section-image img {
+    max-width: 100%;
+    text-align: center; }
+
 .committee {
   max-width: 114rem;
   margin: 0 auto;
