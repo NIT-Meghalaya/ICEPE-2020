@@ -12,7 +12,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (min-width: 1800px) {
     html {
       font-size: 80%; } }
@@ -141,7 +142,14 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
+  .hero-box__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .hero-box__logo {
+    padding: 1rem 2rem; }
   .hero-box__content {
     display: flex;
     flex-direction: column;
@@ -189,6 +197,9 @@ ul {
 
 .bounce {
   animation: bounce 2s infinite; }
+
+.logo {
+  width: 10rem; }
 
 .date_cards {
   display: flex;
