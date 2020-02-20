@@ -578,33 +578,31 @@ ul {
 .sponsorship {
   max-width: 114rem;
   margin: 0 auto;
-  height: 70vh; }
+  padding: 0rem 8rem;
+  display: block; }
   @media only screen and (max-width: 600px) {
     .sponsorship {
-      height: 70vh; } }
+      width: 90%;
+      margin-top: 5rem;
+      font-size: 2.4rem;
+      padding: 0rem 2rem; } }
   @media only screen and (max-width: 400px) {
     .sponsorship {
-      height: 70vh; } }
-  .sponsorship__info {
-    max-width: 114rem;
-    margin: 0 auto;
-    font-size: 2.5rem;
-    margin-top: 10rem;
-    padding: 0rem 8rem; }
-    @media only screen and (max-width: 600px) {
-      .sponsorship__info {
-        width: 90%;
-        margin-top: 5rem;
-        font-size: 2.4rem;
-        padding: 0rem 2rem; } }
-    @media only screen and (max-width: 400px) {
-      .sponsorship__info {
-        width: 65%;
-        margin-top: 3rem;
-        font-size: 2rem; } }
-  .sponsorship__link:link {
+      width: 90%;
+      margin-top: 3rem;
+      font-size: 2rem; } }
+  .sponsorship__head {
+    font-size: 3rem;
+    color: #333; }
+  .sponsorship__img {
+    max-width: 90%;
+    margin: 0 auto; }
+    .sponsorship__img img {
+      max-width: 100%;
+      text-align: center; }
+  .sponsorship__link:link, .sponsorship__link:visited {
     color: #5643fa; }
-  .sponsorship__link:hover {
+  .sponsorship__link:hover, .sponsorship__link:active {
     color: #2998ff; }
 
 .about-information {
