@@ -453,7 +453,8 @@ ul {
         font-weight: 700; } }
   .committee__names {
     font-size: 1.8rem;
-    padding-left: 2rem; }
+    padding-left: 2rem;
+    font-weight: 400; }
     @media only screen and (max-width: 400px) {
       .committee__names {
         margin-top: 0.5rem;
