@@ -1,13 +1,13 @@
 .table{
-    width:50vw;
+    width:60vw;
     margin:0 auto;
     @include respond(tablet){
         width:90%;
-        margin: auto;
+        margin: 0 auto;
     }
      @include respond(mobile-sm){
         width:100%;
-        margin: auto;
+        margin: 0 auto;
     }
     
  
@@ -25,12 +25,13 @@
         }
         &--1{
             font-size:2rem;
-            flex:0 0 60%;
+            flex:0 0 50%;
             @include respond(tablet){
                 font-size:1.8rem;
             }
             @include respond(mobile-sm){
                 font-size:1.5rem;
+                margin-right:1rem;
             }
             margin-right:1rem;
         }
