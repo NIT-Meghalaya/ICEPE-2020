@@ -463,14 +463,7 @@ ul {
 
 .contact {
   max-width: 114rem;
-  margin: 0 auto;
-  height: 70vh; }
-  @media only screen and (max-width: 600px) {
-    .contact {
-      height: 70vh; } }
-  @media only screen and (max-width: 400px) {
-    .contact {
-      height: 70vh; } }
+  margin: 0 auto; }
   .contact__info {
     margin: 0 auto;
     font-size: 2.7rem;
@@ -482,7 +475,7 @@ ul {
         font-size: 2rem; } }
     @media only screen and (max-width: 400px) {
       .contact__info {
-        width: 65%;
+        width: 80%;
         font-size: 2rem; } }
   .contact__name {
     font-size: 3.5rem;
