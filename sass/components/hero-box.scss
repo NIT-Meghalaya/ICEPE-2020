@@ -1,31 +1,18 @@
 .hero-box {
   color: $light-white-color;
-  height: 90vh;
+  min-height: 95vh;
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.5),
       rgba($secondary-color-dark, 0.8)
     ),
-    url("../img/clouds-dawn-dusk-electricity-157039.jpg");
+    url("../img/background-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   background-attachment: fixed;
-
-  &__logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-    &__logo {
-     
-      padding:1rem 2rem;
-      @include respond(mobile){
-        padding:0.5rem;
-      }
-    }
-  
+ 
 
   &__content {
     display: flex;
@@ -43,10 +30,10 @@
     font-size: 2.2rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
   }
-  &__dept{
-     font-size: 2.2rem;
+  &__dept {
+    font-size: 2.2rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 1rem;
@@ -62,7 +49,6 @@
     @include respond(phone-sm) {
       margin-bottom: 2rem;
     }
-   
   }
 }
 
@@ -87,14 +73,4 @@
 
 .bounce {
   animation: bounce 2s infinite;
-}
-
-.logo {
-  width: 10rem;
-  @include respond(mobile){
-    width:5rem;
-  }
-  @include respond(mobile-sm){
-    width:3rem;
-  }
 }

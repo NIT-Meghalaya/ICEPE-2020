@@ -21,7 +21,9 @@
 </head>
 
 <body>
+    
     <header class="header-box">
+       
         <div class="nav">
             <nav class="topnav" id="myTopnav">
                 <a href="./pages/about/">About</a>
@@ -47,16 +49,15 @@
         
         
         <div class="hero-box">
-            <div class="hero-box__logos">
-                <div class="hero-box__logo">
-                    <!-- <img src="./img/IEEE-Logo.png" alt="IEEE Logo" class="logo"> -->
+            <div class="slider">
+                <div class="slider__logos">
+                    <img src="./img/ICEPE-logo.png" alt="IECEPE Logo" class="slider__logo--1">
                 </div>
-               
-                <div class="hero-box__logo">
-                    <img src="./img/NIT logo.png" alt="NITM Logo" class="logo">
+                <div class="slider__logos">
+                    <img src="./img/NIT logo-white.png" alt="NIT Logo" class="slider__logo--2">
                 </div>
             </div>
-            <div class="hero-box__content u-margin-top-small">
+            <div class="hero-box__content u-margin-top-small ">
                 <div class="primary-heading">
                     <h1>ICEPE 2020</h1>
                 </div>
@@ -180,6 +181,24 @@
     </footer>
     
     <script src="./scripts/script.js"></script>
+    
+    <script>
+        const backgroundsLength=3;
+        const slider = document.querySelector(".hero-box");
+        let i=1;
+        setInterval(()=>{
+            
+            slider.style.backgroundImage = `
+            linear-gradient(to bottom right, rgba(0,0,0,0.5),rgba(86,67,250,0.8)),
+            url("../img/background-${i}.jpg")`;
+            i++;
+            if(i>backgroundsLength){
+                i=1;
+            }
+        },5000);
+       
+
+    </script>
 </body>
 
 </html>

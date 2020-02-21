@@ -1,0 +1,34 @@
+.slider {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include respond(phone-sm){
+    justify-content: center;
+  }
+
+  &__logos {
+    flex: 0 0 1;
+  }
+  
+  &__logo--1 {
+    height: 6rem;
+    @include respond(phone) {
+      height: 5rem;
+    }
+    @include respond(phone-sm) {
+      display: none;
+    }
+  }
+  &__logo--2 {
+    width: 35rem;
+    height: auto;
+    @include respond(phone) {
+      width: 22rem;
+
+    }
+    @include respond(phone-sm) {
+      width: 30rem;
+    }
+  }
+}
