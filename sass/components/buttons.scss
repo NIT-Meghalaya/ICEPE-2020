@@ -4,9 +4,10 @@
   font-size: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
-  
   border-radius: 5rem;
   transition: all 0.2s ease-in-out;
+  margin:2rem;
+  
   &--main{
     &:link,&:visited{
       background:$secondary-color-dark;
