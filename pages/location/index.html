@@ -116,25 +116,29 @@
             </div>
         </div>
     </footer>
+    
+    <script src="../../scripts/script.js"></script>
     <script>
         //gallery
-        var index = 1;
-        showSlide();
+        document.addEventListener("DOMContentLoaded", () => {
+            var index = 1;
+            showSlide();
 
-        function showSlide() {
-            var i;
-            var slides = document.getElementsByClassName("location__slide");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none ";
+            function showSlide() {
+                var i;
+                var slides = document.getElementsByClassName("location__slide");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none ";
+                }
+                index++;
+                if (index > slides.length) { index = 1; }
+                slides[index - 1].style.display = "block";
+                setTimeout(showSlide, 3000);
             }
-            index++;
-            if (index > slides.length) { index = 1; }
-            slides[index - 1].style.display = "block";
-            setTimeout(showSlide, 3000);
-        }
-       
+        })
+
+
     </script>
-    <script src="../../scripts/script.js"></script>
 </body>
 
 </html>
