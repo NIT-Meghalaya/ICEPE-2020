@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const backgroundsLength = 3;
+  const backgroundsLength = 6;
   const slider = document.querySelector(".hero-box");
   let i = 1;
   setInterval(() => {
