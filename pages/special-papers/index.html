@@ -29,6 +29,7 @@
                 </a>
                 <div class="dropdown-content">
                     <a href="../regular-papers/">Regular Session</a>
+                    <a href="../approved-special-sessions/">Approved Special Session</a>
                 </div>
             </div>
             <a href="../author/">Author</a>
@@ -139,6 +140,15 @@
             </div>
         </div>
     </footer>
-    <script src="../../scripts/script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

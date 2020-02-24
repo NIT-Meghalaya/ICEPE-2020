@@ -1,0 +1,25 @@
+ .approved{
+   max-width:114rem;
+    margin:0 auto;
+    padding:2rem 10rem;
+    min-height:90vh;
+     @include respond(phone){
+        width:90%;
+        margin:0 auto;
+        padding:2rem 1rem;
+        
+    }
+
+    &__head{
+      
+      &__tag{
+        color:$secondary-color-light;
+      }
+      &__tagline{
+        &:link,&:visited{
+          color:$secondary-color-dark;
+
+        }
+      }
+    }
+ }
