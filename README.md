@@ -19,6 +19,7 @@ The application is a simple static site made for the event by a small team of 3 
 - To make the site ready for deployment hit:
   `npm run build:css`
 
+The website is currently under development and can be viewed [here](https://heuristic-heyrovsky-4ecb0b.netlify.com/)
 
 Folder Structure for SaSS files:
 7*1 CSS Architecture is used to manage CSS files:
